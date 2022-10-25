@@ -1,0 +1,8 @@
+.idea/
+*.pyc
+.gitattributes
+requirements.txt
+django_py37/settings.py
+requirements.txt
+user/migrations/
+!user/migrations/__init__.py
