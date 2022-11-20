@@ -15,3 +15,18 @@ class Tag(models.Model):
 
     def save(self, *args, **kwargs):
         super(Tag, self).save(*args, **kwargs)
+
+
+class AuditStatus(models.Model):
+    name = models.CharField(max_length=24, blank=True)
+
+    def save(self, *args, **kwargs):
+        super(AuditStatus, self).save(*args, **kwargs)
+
+
+class BDStatus(models.Model):
+    name = models.CharField(max_length=24, blank=True)
+
+    def save(self, *args, **kwargs):
+        super(BDStatus, self).save(*args, **kwargs)
+
