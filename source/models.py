@@ -56,3 +56,24 @@ class Group(models.Model):
 
     def save(self, *args, **kwargs):
         super(Group, self).save(*args, **kwargs)
+
+class orgBDresponse(models.Model):
+    name = models.CharField(max_length=32, blank=True)
+    material = models.CharField(max_length=32, blank=True)
+    sort = models.IntegerField()
+
+    def save(self, *args, **kwargs):
+        super(orgBDresponse, self).save(*args, **kwargs)
+
+class orgType(models.Model):
+    name = models.CharField(max_length=32, blank=True)
+
+    def save(self, *args, **kwargs):
+        super(orgType, self).save(*args, **kwargs)
+
+class projectStatus(models.Model):
+    name = models.CharField(max_length=32, blank=True)
+
+    def save(self, *args, **kwargs):
+        super(projectStatus, self).save(*args, **kwargs)
+
