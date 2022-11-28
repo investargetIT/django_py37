@@ -71,9 +71,10 @@ class orgType(models.Model):
     def save(self, *args, **kwargs):
         super(orgType, self).save(*args, **kwargs)
 
-class projectStatus(models.Model):
+class titleType(models.Model):
     name = models.CharField(max_length=32, blank=True)
+    hotpoint = models.IntegerField()
 
     def save(self, *args, **kwargs):
-        super(projectStatus, self).save(*args, **kwargs)
+        super(titleType, self).save(*args, **kwargs)
 
